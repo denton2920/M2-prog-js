@@ -66,10 +66,18 @@ class App
         
 
     }
+    newClassFuntion(aArgument)
+    {
+        console.log("hello world in de nieuwClassFuntion");
+        console.log("hier:")
+        console.log(aArgument)
+    }
+
 }
 
 let app = new App();
 app.runApplication();
+app.newClassFuntion("mijn argument is iets...");
 
 
 
