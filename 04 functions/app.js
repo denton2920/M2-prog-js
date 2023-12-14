@@ -63,6 +63,11 @@ class App
     {
         console.log("hallo weereld");
         superMooieGlobalFuntion();
+        this.mario();
+        this.bwa();
+       let m = this.optellen(3,4);
+        console.log(m)
+        this.bwa2();
         
 
     }
@@ -73,11 +78,38 @@ class App
         console.log(aArgument)
     }
 
+    mario()
+    {
+        console.log("Mario!!")
+    }
+
+    bwa()
+    {
+       let brul = console.log("BWAHAHA")
+       return brul
+    }
+
+    optellen(a,b)
+    {
+        let m = a + b;
+        return m;
+    }
+    
+    bwa2(){
+       this.bwa();
+    }
+
 }
 
 let app = new App();
 app.runApplication();
 app.newClassFuntion("mijn argument is iets...");
+app.mario();
+app.bwa();
+let m = app.optellen(1,2);
+console.log(m);
+app.bwa2();
+
 
 
 
